@@ -2,7 +2,6 @@ import axiosClient from "./axiosCLient";
 import { setTask } from "../redux/action/taskAction";
 import { setColumn } from "../redux/action/columnAction";
 export const editNameColumn = (prevName, newColumnName) => {
-  console.log("ten truoc", prevName, "ten sau", newColumnName);
   return async (dispatch, getState) => {
     try {
       const { tasks } = getState().todoState;
@@ -33,16 +32,3 @@ export const editNameColumn = (prevName, newColumnName) => {
     }
   };
 };
-// export const editColumn = (oldIndex, newIndex)=>{
-//   return async (dispatch, getState) => {
-//     try {
-//       const { tasks } = getState().todoState;
-
-//    console.log(tasks);
-
-//       // Nếu request thành công, cập nhật lại trạng thái tasks trong Redux
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   };
-// }
