@@ -1,0 +1,7 @@
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fb933b; /* Màu sắc của dấu chấm đang chọn */
+}
